@@ -1,0 +1,46 @@
+{
+  "name": "ignite-boilerplate-barebones",
+  "description": "A barebones boilerplate for Ignite CLI.",
+  "license": "MIT",
+  "repository": "infinitered/ignite-boilerplate-barebones",
+  "homepage": "https://github.com/infinitered/ignite-boilerplate-barebones",
+  "version": "1.0.0",
+  "files": [
+    "boilerplate",
+    "boilerplate.js",
+    "readme.md"
+  ],
+  "author": {
+    "name": "Infinite Red",
+    "email": "npm@infinite.red",
+    "url": "https://github.com/infinitered/ignite-boilerplate-barebones"
+  },
+  "scripts": {
+    "lint": "tslint -p .",
+    "shipit": "np"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "globals": [
+      "__DEV__",
+      "jasmine",
+      "beforeAll",
+      "afterAll",
+      "beforeEach",
+      "test",
+      "expect",
+      "describe",
+      "jest",
+      "it"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "np": "^2.15.0",
+    "standard": "^10.0.2",
+    "tempy": "^0.1.0"
+  },
+  "dependencies": {
+    "ramda": "^0.23.0"
+  }
+}
