@@ -33,7 +33,7 @@ async function install(context) {
   if (rnInstall.exitCode > 0) process.exit(rnInstall.exitCode)
 
   // patch third-party issue with React Native 0.57.3
-  system.run('./node_modules/react-native/scripts/ios-install-third-party.sh')
+  system.run('cd node_modules/react-native && ./scripts/ios-install-third-party.sh && cd third-party/glog-0.3.5/ && ../../scripts/ios-configure-glog.sh && cd ../../../..')
 
   spinner.succeed(`patched Xcode 10 issue`)
 
